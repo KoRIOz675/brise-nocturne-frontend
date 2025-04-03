@@ -1,0 +1,55 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+
+const Footer: React.FC = () => {
+  return (
+    <footer className="bg-gray-900 text-gray-400 py-8 px-8">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        {/* Section Droite (Copyright & Contact) */}
+        <div className="text-center md:text-left mb-4 md:mb-0">
+          <p>
+            © {new Date().getFullYear()} Brise Nocturne. Tous droits réservés.
+          </p>
+          <Link
+            to="/contact"
+            className="hover:text-white transition duration-300"
+          >
+            Nous Contacter
+          </Link>
+        </div>
+
+        {/* Section Gauche (Réseaux Sociaux) */}
+        <div className="flex space-x-6">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition duration-300"
+          >
+            <FaFacebook size={24} />
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition duration-300"
+          >
+            <FaTwitter size={24} />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition duration-300"
+          >
+            <FaInstagram size={24} />
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
