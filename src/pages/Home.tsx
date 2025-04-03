@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ImageSection: React.FC = () => {
-  const mainImageURL = "/path/to/default/image.jpg"; // Remplacez par une URL valide
+  const mainImageURL = ""; // Main Image url
 
   return (
     <section
