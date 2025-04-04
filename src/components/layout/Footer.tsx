@@ -5,9 +5,8 @@ import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-gray-400 py-8 px-8">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        {/* Section Droite (Copyright & Contact) */}
+    <footer className="bg-slate-900 text-white py-8 px-8">
+      <div className="container mx-auto flex flex-col justify-between items-center  md:flex-row md:justify-around">
         <div className="text-center md:text-left mb-4 md:mb-0">
           <p>
             © {new Date().getFullYear()} Brise Nocturne. Tous droits réservés.
@@ -20,7 +19,6 @@ const Footer: React.FC = () => {
           </Link>
         </div>
 
-        {/* Section Gauche (Réseaux Sociaux) */}
         <div className="flex space-x-6">
           <a
             href="https://facebook.com"
