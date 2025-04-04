@@ -1,9 +1,9 @@
 import React, { ReactNode } from "react";
-import Header from "./Header"; // Importe le composant frère
-import Footer from "./Footer"; // Importe le composant frère
+import Header from "./Header";
+import Footer from "./Footer";
 
 interface LayoutProps {
-  children: ReactNode; // Pour accepter le contenu de la page
+  children: ReactNode;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {

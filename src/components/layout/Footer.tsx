@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
 
         <div className="flex space-x-6">
           <a
-            href="https://facebook.com"
+            href="https://facebook.com" // Edit with final URL
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition duration-300"
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             <FaFacebook size={24} />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://twitter.com" // Edit with final URL
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition duration-300"
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
             <FaTwitter size={24} />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://instagram.com" // Edit with final URL
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition duration-300"
