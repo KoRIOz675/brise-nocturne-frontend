@@ -55,22 +55,22 @@ const PresentationSection: React.FC = () => {
   );
 };
 
-const ReservationSection: React.FC = () => {
+const CardSection: React.FC = () => {
   return (
     <section className="bg-gray-100 py-16 px-8">
       <div className="container mx-auto text-center max-w-4xl">
         <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">
           Réservez votre aventure dès maintenant !
         </h2>
-        <div className="flex flex-col items-start justify-center min-h-screen pt-20 pb-10 md:flex-row">
-          <div className="bg-amber-700 relative text-center max-w-xs rounded-md shadow-md mt-12 pt-[65px] pb-[30px] px-[25px] m-5">
+        <div className="flex flex-col items-center justify-center md:flex-row md:items-stretch md:justify-center pt-20 pb-10">
+          <div className="bg-amber-700 relative flex flex-col text-center max-w-xs w-full rounded-md shadow-md mt-12 pt-[65px] pb-[30px] px-[25px] m-5">
             <div
               className="absolute -top-[45px] left-1/2 -translate-x-1/2  w-[90px] h-[90px] rounded-full bg-amber-600 text-white flex items-center 
               justify-center text-5xl font-bold shadow-sm"
             >
               1
             </div>
-            <div className="flex flex-col items-center h-full">
+            <div className="flex flex-col items-center flex-grow">
               <h3 className="text-3xl font-bold leading-tight mb-5 text-white">
                 Réservation
                 <br /> de la salle
@@ -87,19 +87,19 @@ const ReservationSection: React.FC = () => {
               <p className="text-lg mb-8 text-white">
                 (Prestation MJ non-incluse)
               </p>
-              <button className="bg-white text-amber-800 px-6 py-3 rounded-lg shadow-md hover:bg-amber-400 transition duration-300">
+              <button className="bg-white text-amber-800 px-6 py-3 rounded-lg shadow-md hover:bg-amber-400 transition duration-300 mt-auto">
                 Plus d'infos
               </button>
             </div>
           </div>
-          <div className="bg-amber-700 relative text-center max-w-xs rounded-md shadow-md mt-12 pt-[65px] pb-[30px] px-[25px] m-5">
+          <div className="bg-amber-700 relative flex flex-col text-center max-w-xs w-full rounded-md shadow-md mt-12 pt-[65px] pb-[30px] px-[25px] m-5">
             <div
               className="absolute -top-[45px] left-1/2 -translate-x-1/2  w-[90px] h-[90px] rounded-full bg-amber-600 text-white flex items-center 
               justify-center text-5xl font-bold shadow-sm"
             >
               2
             </div>
-            <div className="flex flex-col items-center h-full">
+            <div className="flex flex-col items-center flex-grow">
               <h3 className="text-3xl font-bold leading-tight mb-5 text-white">
                 Initiation
                 <br /> JDR
@@ -111,7 +111,7 @@ const ReservationSection: React.FC = () => {
                 l'univers de Donjons & Dragons.
               </p>
               <p className="text-lg mb-8 text-white">(Prestation MJ incluse)</p>
-              <button className="bg-white text-amber-800 px-6 py-3 rounded-lg shadow-md hover:bg-amber-400 transition duration-300">
+              <button className="bg-white text-amber-800 px-6 py-3 rounded-lg shadow-md hover:bg-amber-400 transition duration-300 mt-auto">
                 Plus d'infos
               </button>
             </div>
@@ -128,7 +128,7 @@ const HomePage: React.FC = () => {
       <main className="flex-grow">
         <ImageSection />
         <PresentationSection />
-        <ReservationSection />
+        <CardSection />
       </main>
     </div>
   );
