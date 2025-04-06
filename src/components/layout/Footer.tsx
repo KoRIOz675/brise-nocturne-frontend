@@ -11,9 +11,10 @@ const Footer: React.FC = () => {
           <p>
             © {new Date().getFullYear()} Brise Nocturne. Tous droits réservés.
           </p>
+          <hr className="text-2xl font-bold mb-2 mt-2" />
           <Link
             to="/contact"
-            className="hover:text-white transition duration-300"
+            className="hover:text-red-500 transition duration-300"
           >
             Nous Contacter
           </Link>
@@ -24,7 +25,7 @@ const Footer: React.FC = () => {
             href="https://facebook.com" // Edit with final URL
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white transition duration-300"
+            className="hover:text-red-500 transition duration-300"
           >
             <FaFacebook size={24} />
           </a>
@@ -32,7 +33,7 @@ const Footer: React.FC = () => {
             href="https://twitter.com" // Edit with final URL
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white transition duration-300"
+            className="hover:text-red-500 transition duration-300"
           >
             <FaTwitter size={24} />
           </a>
@@ -40,7 +41,7 @@ const Footer: React.FC = () => {
             href="https://instagram.com" // Edit with final URL
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white transition duration-300"
+            className="hover:text-red-500 transition duration-300"
           >
             <FaInstagram size={24} />
           </a>
