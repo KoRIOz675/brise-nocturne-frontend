@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/Layout"; // Correction de la casse
 import HomePage from "./pages/Home";
 import BookPage from "./pages/Book";
+import ContactPage from "./pages/Contact";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           {/* Décommentez les routes ci-dessous si les pages correspondantes sont prêtes */}
           <Route path="/Book" element={<BookPage />} />
-          {/* <Route path="/contact" element={<ContactPage />} /> */}
+          <Route path="/Contact" element={<ContactPage />} />
           {/* <Route path="/profile" element={<ProfilePage />} /> */}
           {/* Ajoutez vos autres routes ici */}
         </Routes>

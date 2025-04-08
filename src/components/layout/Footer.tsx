@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           <hr className="text-2xl font-bold mb-2 mt-2" />
           <div className="flex flex-col items-center justify-center m-2 space-x-4 md:flex-row">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42009.73534713781!2d2.3298048!3d48.8466067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d39ebb8601%3A0xd99b7bf65c716272!2sLe%20Bon%20March%C3%A9%20Rive%20Gauche!5e0!3m2!1sfr!2sfr!4v1743946683745!5m2!1sfr!2sfr"
+              src=""
               width="300"
               height="100"
               style={{ border: 0 }}
